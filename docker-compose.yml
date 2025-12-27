@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  deepfake-detector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: deepfake-detector-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+      - MODEL_PATH=/app/models/deepfake_detector_resnet18_ffpp.pth
+    volumes:
+      # Opcional: montar directorio para subir nuevas imágenes
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

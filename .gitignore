@@ -1,0 +1,94 @@
+# ============================================
+# DATASETS Y ARCHIVOS PESADOS
+# ============================================
+
+# Videos originales (muy pesados)
+data/raw/
+
+# Imágenes procesadas (excepto fotos de amigos para demo)
+data/processed/ffpp/train/
+data/processed/ffpp/val/
+data/processed/ffpp/test/**/
+!data/processed/ffpp/test/real/amigo*.jpeg
+
+# CSVs generados (se pueden regenerar)
+data/processed/ffpp/*.csv
+data/*.csv
+
+# Modelos entrenados (muy pesados, ~44-400 MB cada uno)
+models/*.pth
+models/*.pt
+
+# Resultados de ejecución
+results/
+latex_figures/
+
+# ============================================
+# PYTHON
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# ============================================
+# DOCKER
+# ============================================
+
+# No ignorar Dockerfile ni docker-compose
+# (ya están incluidos en el proyecto)
+
+# ============================================
+# LATEX
+# ============================================
+
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# PDFs generados (opcional, descomenta si no quieres subirlo)
+# informe.pdf
+
+# ============================================
+# SISTEMA OPERATIVO
+# ============================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory

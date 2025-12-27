@@ -1,0 +1,63 @@
+# Ignorar archivos innecesarios para reducir tamaño de imagen Docker
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Datasets grandes (solo necesitamos modelos y fotos de prueba)
+data/raw/
+data/processed/ffpp/train/
+data/processed/ffpp/val/
+data/processed/ffpp/test/fake/
+videos/
+*.mp4
+*.avi
+*.zip
+
+# Notebooks y resultados intermedios
+notebooks/
+results/
+latex/
+*.ipynb
+
+# Documentación
+informe.tex
+*.pdf
+docs/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporales
+*.tmp
+*.bak
+.cache/
+
+# Scripts de preprocesamiento (no necesarios en producción)
+check_missing.py
