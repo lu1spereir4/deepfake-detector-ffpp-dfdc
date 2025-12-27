@@ -144,3 +144,9 @@ Luis Pereira Toledo - Universidad del Bío-Bío
 Ingeniería Civil en Informática  
 Asignatura: Introduccion a las aplicaciones de algoritmos de Machine Learning y Deep Learning  
 Diciembre 2025
+
+
+## 📄 Technical Report
+The full project report (SoftwareX format) is available in:
+
+docs/PS_IAMLDL_Pereira_Luis.pdf
