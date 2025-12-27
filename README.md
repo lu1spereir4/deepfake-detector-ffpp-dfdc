@@ -84,9 +84,9 @@ uvicorn main:app --reload
 
 ### 7. Docker
 ```bash
-docker build -t deepfake-detector .
-docker run -p 8000:8000 deepfake-detector
+docker-compose up
 ```
+Acceder a: http://localhost:8000/docs
 
 ## Resultados Clave
 

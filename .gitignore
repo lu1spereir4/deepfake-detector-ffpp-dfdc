@@ -23,9 +23,9 @@ data/processed/ffpp/test/fake/*.png
 data/processed/ffpp/*.csv
 data/*.csv
 
-# Modelos entrenados (muy pesados, ~44-400 MB cada uno)
-models/*.pth
-models/*.pt
+# Modelos entrenados (incluidos en el repositorio)
+# models/*.pth
+# models/*.pt
 
 # Resultados de ejecución
 results/

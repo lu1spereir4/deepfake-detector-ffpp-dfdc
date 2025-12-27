@@ -45,12 +45,8 @@ COPY src/ ./src/
 COPY models/ ./models/
 COPY data/processed/ffpp/test/real/amigo*.jpeg ./data/test_images/
 
-# Crear directorio para uploads si se necesita
+# Crear directorio para uploads
 RUN mkdir -p /app/uploads
-
-# Verificar que el modelo existe
-RUN test -f /app/models/deepfake_detector_resnet18_ffpp.pth || \
-    (echo "ERROR: Modelo ResNet18 no encontrado en /app/models/" && exit 1)
 
 # Exponer puerto para la API
 EXPOSE 8000
